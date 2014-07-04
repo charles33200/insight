@@ -22,9 +22,23 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   display: none !important;
 }
 
+.about em {
+  color: #EB9800;
+  text-decoration:none;
+}
+
+.about img {
+  float:left;
+  margin-right:5px;
+}
+
+.about .second {
+  margin-top: 10px;
+}
+
 /* Styling for the ngProgress itself */
 #ngProgress {
-  background-color: #6C9032 !important;
+  background-color: #EB9800 !important;
   box-shadow: none !important;
   color: #373D42 !important;
   height: 3px !important;
@@ -102,10 +116,10 @@ margin-left: 0;
 }
 
 .table-hover>tbody>tr:hover>td, .table-hover>tbody>tr:hover>th {
-  background-color: #F0F7E2;
+  background-color: #F7F0E2;
 }
 .navbar { min-height: 64px; }
-.navbar-default .navbar-toggle { 
+.navbar-default .navbar-toggle {
   border-color: #fff;
   margin-top: 15px;
 }
@@ -114,7 +128,7 @@ margin-left: 0;
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background-color: #373D42;}
 
 .navbar-default {
-  background-color: #8DC429;
+  background-color: #F4C430;
   margin: 0;
   border: 0;
 }
@@ -127,7 +141,7 @@ margin-left: 0;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus {
-  background-color: #6C9032;
+  background-color: #EB9800;
   color: #fff;
 }
 
@@ -181,7 +195,7 @@ margin-left: 0;
 }
 
 .navbar-form .form-control {
-  background-color: #7CAD23;
+  background-color: #FFCD33;
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -216,7 +230,7 @@ margin-left: 0;
 }
 
 #search::-webkit-input-placeholder {
-  color: #BCDF7E;
+  color: #FFF;
   font-family: 'Ubuntu', sans-serif;
   font-size: 14px;
   font-style: italic;
@@ -224,7 +238,7 @@ margin-left: 0;
 }
 
 #search::-moz-placeholder {
-  color: #BCDF7E;
+  color: #FFF;
   font-family: 'Ubuntu', sans-serif;
   font-size: 14px;
   font-weight: 100;
@@ -233,7 +247,7 @@ margin-left: 0;
 .status {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
-  background-color: #597338;
+  background-color: #EB9800;
   border-radius: 3px;
   margin: 15px 0;
   padding: 8px 10px;
@@ -352,8 +366,8 @@ margin-left: 0;
   border-radius: 2px;
 }
 .btn-primary {
-  background-color: #8DC429;
-  border: 2px solid #76AF0F;
+  background-color: #F4C430;
+  border: 2px solid #EB9800;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active,
@@ -406,7 +420,7 @@ margin-left: 0;
 }
 
 .txvalues-primary {
-  background-color: #8DC429;
+  background-color: #F4C430;
 }
 
 .txvalues-default {
@@ -429,7 +443,7 @@ margin-left: 0;
   font-size: 14px;
   font-weight: normal;
 }
-.progress-bar-info { background-color: #8DC429; }
+.progress-bar-info { background-color: #EB9800; }
 
 /* Set the fixed height of the footer here */
 #footer {
@@ -603,7 +617,7 @@ margin-left: 0;
   text-align: center;
 }
 
-.tx-id span { 
+.tx-id span {
   font-size: 40px;
   margin: 30px 0;
 }

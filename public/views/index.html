@@ -16,7 +16,7 @@
               <th>Height</th>
               <th>Age</th>
               <th class="text-right"><span class="ellipsis">Transactions</span></th>
-              <th class="text-right"><span class="ellipsis">Mined by</span></th>
+              <th class="text-right"><span class="ellipsis">Algo</span></th>
               <th class="text-right">Size</th>
             </tr>
           </thead>
@@ -28,7 +28,7 @@
             </td>
             <td><span class="ellipsis">{{humanSince(b.time)}}</span></td>
             <td class="text-right">{{b.txlength}}</td>
-            <td class="text-right"><a href="{{b.poolInfo.url}}" title="{{b.poolInfo.poolName}}" target="_blank" data-ng-show="b.poolInfo">{{b.poolInfo.poolName}}</a></td>
+            <td class="text-right">{{b.algo}}</td>
             <td class="text-right">{{b.size}} bytes</td>
           </tr>
           </tbody>
@@ -59,21 +59,39 @@
 
       </div>
 
-      <div class="col-xs-12 col-md-4 col-gray">
-        <h2> About </h2>
-        <p><strong>insight</strong>  is an <a href="http://live.insight.is/" target="_blank">open-source Bitcoin blockchain explorer</a> with complete REST
-and websocket APIs that can be used for writing web wallets and other apps
-that need more advanced blockchain queries than provided by bitcoind RPC.
-Check out the <a href="http://github.com/bitpay/insight" target="_blank">source code</a>.</p>
-        <p><strong>insight</strong> is still in development, so be sure to report any bugs and provide feedback for improvement at our <a href="https://github.com/bitpay/insight/issues" target="_blank">github issue tracker</a>.</p>
-        <div id="powered" class="row">
-          <div class="powered-text">
-            <small class="text-muted">Powered by</small>
-          </div>
-          <a href="http://bitcore.io" target="_blank" class="bitcore" title="Bitcore"></a>
-          <a href="http://angularjs.org" target="_blank" class="angularjs" title="AngularJS"></a>
-          <a href="https://code.google.com/p/leveldb/" target="_blank" class="leveldb" title="LevelDB"></a>
-          <a href="http://nodejs.org" target="_blank" class="nodejs" title="NodeJs"></a>
+      <div class="col-xs-12 col-md-4  about">
+        <div class="col-gray">
+          <img src="img/sfr.png" alt="sfr">
+          <h2> Saffroncoin </h2>
+          <p><em>SaffronCoin</em> (SFR) is a crypto-currency that enables instant payments to anyone, anywhere in the world. It uses distributed peer-to-peer technology to operate with no central authority; transactions and coin minting are carried out collectively by the network. It is a Proof-of-Work based coin and uses multiple algorithms to find the next block hence increasing the security of the network.</p>
+          <p>SaffronCoin is the <em>first multi-algorithm</em> coin to feature two of the most promising algorithms today i.e. <em>X11</em> and <em>Blake</em>. The other algorithms used are SHA256D, Scrypt and Groestl.</p>
+        </div>
+        <div class="col-gray second">
+          <h2> Current Difficulty </h2>
+          <table class="table" data-ng-controller="StatusController" data-ng-init="getStatus('Info')">
+            <tbody>
+              <tr>
+               <td>SHA256D Difficulty</td>
+                <td class="text-right">{{info.difficulty_sha256d}}</td>
+              </tr>
+              <tr>
+               <td>Scrypt Difficulty</td>
+                <td class="text-right">{{info.difficulty_scrypt}}</td>
+              </tr>
+              <tr>
+               <td>Groestl Difficulty</td>
+                <td class="text-right">{{info.difficulty_groestl}}</td>
+              </tr>
+              <tr>
+               <td>X11 Difficulty</td>
+                <td class="text-right">{{info.difficulty_x11}}</td>
+              </tr>
+              <tr>
+               <td>Blake Difficulty</td>
+                <td class="text-right">{{info.difficulty_blake}}</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div> <!-- END OF COL-3 -->
     </div>

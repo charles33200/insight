@@ -70,10 +70,8 @@
             <td class="text-right text-muted">{{block.time * 1000 | date:'medium'}}</td>
           </tr>
           <tr data-ng-show="block.poolInfo">
-            <td><strong>Mined by</strong></td>
-            <td class="text-right text-muted">
-              <a href="{{block.poolInfo.url}}" target="_blank" title="{{block.poolInfo.poolName}}">{{block.poolInfo.poolName}}</a>
-            </td>
+            <td><strong>Algo</strong></td>
+            <td class="text-right text-muted">{{block.algo}}</td>
           </tr>
           <tr>
             <td><strong>Merkle Root</strong></td>
