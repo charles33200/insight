@@ -5,7 +5,7 @@ angular.module('insight').config(function($routeProvider) {
   $routeProvider.
     when('/block/:blockHash', {
       templateUrl: '/views/block.html',
-      title: 'Saffroncoin Block '
+      title: 'SaffronCoin Block '
     }).
     when('/block-index/:blockHeight', {
       controller: 'BlocksController',
@@ -13,27 +13,27 @@ angular.module('insight').config(function($routeProvider) {
     }).
     when('/tx/:txId/:v_type?/:v_index?', {
       templateUrl: '/views/transaction.html',
-      title: 'Saffroncoin Transaction '
+      title: 'SaffronCoin Transaction '
     }).
     when('/', {
       templateUrl: '/views/index.html',
-      title: 'Saffroncoin Blocks Explorer'
+      title: 'SaffronCoin Block Explorer'
     }).
     when('/top100', {
       templateUrl: '/views/top_100.html',
-      title: 'Saffroncoin Top 100'
+      title: 'SaffronCoin Top 100'
     }).
     when('/blocks', {
       templateUrl: '/views/block_list.html',
-      title: 'Saffroncoin Blocks solved Today'
+      title: 'SaffronCoin Blocks solved Today'
     }).
     when('/blocks-date/:blockDate/:startTimestamp?', {
       templateUrl: '/views/block_list.html',
-      title: 'Saffroncoin Blocks solved '
+      title: 'SaffronCoin Blocks solved '
     }).
     when('/address/:addrStr', {
       templateUrl: '/views/address.html',
-      title: 'Saffroncoin Address '
+      title: 'SaffronCoin Address '
     }).
     when('/status', {
       templateUrl: '/views/status.html',

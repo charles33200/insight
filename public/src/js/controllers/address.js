@@ -22,7 +22,6 @@ angular.module('insight.address').controller('AddressController',
 
     $scope.params = $routeParams;
 
-
     $scope.findOne = function() {
       $rootScope.currentAddr = $routeParams.addrStr;
       _startSocket();
