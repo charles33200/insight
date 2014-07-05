@@ -7,7 +7,7 @@
 	<meta name="fragment" content="!">
 	<title data-ng-bind="$root.title + $root.titleDetail + ' | Insight'">Insight</title>
 	<meta name="keywords" content="bitcoins, transactions, blocks, address, block chain, best block, mining difficulty, hash serialized">
-	<meta name="description" content="Saffroncoin Insight. View detailed information on all bitcoin transactions and block. {{ $root.title + $root.titleDetail }}">
+	<meta name="description" content="Saffroncoin Insight. View detailed information on all saffroncoin transactions and block. {{ $root.title + $root.titleDetail }}">
 	<link rel="shortcut icon" href="/img/icons/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,400italic">
 	<link rel="stylesheet" href="/css/main.min.css">
@@ -43,7 +43,11 @@
 		<section class="container" data-ng-view></section>
 	</div>
 	<div id="footer" role="navigation">
-    <div class="container" data-ng-controller="FooterController">
+		<div class="container" data-ng-controller="FooterController">
+			<div class="pull-left m10v">Tips appreciated!
+				<a class="insight" href="/address/SYZSyqStnX3JP1Eh45LKbH22tBEka1rfNB"><small>SFR</small></a>
+				<a class="insight" target="_blank" href="https://blockchain.info/address/127m7j2UikJHx89x3hQNzUqpAdiyVr9J9f"><small>BTC</small></a>
+				</div>
       <a class="insight m10v pull-right" target="_blank" href="http://insight.is">insight <small>API v{{version}}</small></a>
     </div>
   </div>

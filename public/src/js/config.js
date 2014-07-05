@@ -17,7 +17,11 @@ angular.module('insight').config(function($routeProvider) {
     }).
     when('/', {
       templateUrl: '/views/index.html',
-      title: 'Home'
+      title: 'Saffroncoin Blocks Explorer'
+    }).
+    when('/top100', {
+      templateUrl: '/views/top_100.html',
+      title: 'Saffroncoin Top 100'
     }).
     when('/blocks', {
       templateUrl: '/views/block_list.html',

@@ -13,7 +13,10 @@ angular.module('insight.system').controller('HeaderController',
     $scope.menu = [{
       'title': 'Blocks',
       'link': 'blocks'
-    }, {
+    },{
+      'title': 'Top 100',
+      'link': 'top100'
+    },{
       'title': 'Status',
       'link': 'status'
     }];
