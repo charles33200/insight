@@ -8,8 +8,9 @@ angular.module('insight.blocks').controller('Top100Controller',
   $scope.list = function() {
     $scope.loading = true;
 
-    Top100.get({}, function(res) {
-      $scope.top100 = res.top100;
+    Top100.query({}, function(res) {
+      $scope.loading = false;
+      $scope.top100 = res;
     });
   };
 
